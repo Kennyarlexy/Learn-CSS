@@ -1,0 +1,144 @@
+body {
+    background-color: moccasin;
+}
+
+/* 
+flexbox by default will fill the entire width
+justify-item --> work with the direction of flex-direction alignment
+align-item --> work with the other direction alignment
+*/
+
+.container-1 {
+    width: 350px;
+    background-color: white;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* default */
+}
+
+.item-1 {
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* the reason this container is always bigger than their child is bcuz i set the height to 55vw, otherwise the height will be the same with the child and green background is not visible */
+.parent-container {
+    display: flex;
+    height: 55vw;
+    background-color: rgb(192, 245, 192);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-2 {
+    display: flex;
+    height: 43vw;
+    width: 43vw;
+    background-color: white;
+}
+
+.container-3 {
+    display: flex;
+    height: 43vw;
+    width: 43vw;
+    background-color: white;
+    align-items: center;
+}
+
+/* Not setting the height of item, left container (2) using stretch, right container (3) using center */
+.item-2 {
+    width: 40px;
+    margin: 10px;
+    text-align: center;
+    background-color: lightpink;
+    font-weight: 600;
+}
+
+.item-3 {
+    width: 40px;
+    margin: 10px;
+    text-align: center;
+    background-color: lightpink;
+    font-weight: 600;
+}
+
+.container-4 {
+    background-color: white;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-4 {
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container-5 {
+    height: 500px;
+    background-color: white;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* test */
+.test-parent-container {
+    display: flex;
+    padding-bottom: 2vw;
+    background-color: rgb(192, 245, 192);
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#title-1 {
+    width: 50%;
+    text-align: center;
+}
+
+#title-2 {
+    width: 50%;
+    text-align: center;
+}
+
+.test-container-1 {
+    display: flex;
+    width: 45%;
+    height: 5vw;
+    padding: 1vw 0;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.test-container-2 {
+    display: flex;
+    width: 45%;
+    height: 5vw;
+    padding: 1vw 0;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.test-item-1 {
+    background-color: lightblue;
+    width: 14%;
+    text-align: center;
+}
+
+.test-item-2 {
+    background-color: lightblue;
+    width: 14%;
+    text-align: center;
+}

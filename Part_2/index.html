@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Box Part 2</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h3>
+            A and E grow (if width is more than 100px) and shrink (if width is
+            less than 100px) 5 times the rate that of B, C, D
+        </h3>
+        <div class="parent">
+            <div
+                class="item"
+                style="flex-basis: 100px; flex-grow: 5; flex-shrink: 5"
+            >
+                A
+            </div>
+            <div
+                class="item"
+                style="flex-basis: 100px; flex-grow: 1; flex-shrink: 1"
+            >
+                B
+            </div>
+            <div
+                class="item"
+                style="flex-basis: 100px; flex-grow: 1; flex-shrink: 1"
+            >
+                C
+            </div>
+            <div
+                class="item"
+                style="flex-basis: 100px; flex-grow: 1; flex-shrink: 1"
+            >
+                D
+            </div>
+            <div
+                class="item"
+                style="flex-basis: 100px; flex-grow: 5; flex-shrink: 5"
+            >
+                E
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="item" style="flex: 5 5 100px; align-self: flex-start">
+                A
+            </div>
+            <div class="item" style="flex: 1 1 100px; align-self: center">
+                B
+            </div>
+            <div class="item" style="flex: 1 1 100px; align-self: flex-end">
+                <img src="img-1.jpg" alt="image one" width="100%" />
+            </div>
+            <div class="item" style="flex: 1 1 100px; align-self: center">
+                D
+            </div>
+            <div class="item" style="flex: 5 5 100px; align-self: flex-start">
+                E
+            </div>
+        </div>
+    </body>
+</html>

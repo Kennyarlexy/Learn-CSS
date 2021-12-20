@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    padding: 3px 0;
+    background-color: rgb(54, 54, 54);
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    color: white;
+    text-align: center;
+}
+
+#item-1 {
+    text-align: right;
+    margin-right: 5px;
+}
+
+#item-2 {
+    text-align: left;
+    margin-left: 5px;
+}
+
+#item-7 {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+.circle {
+    background-color: cyan;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.rectangle {
+    justify-self: center;
+    background-color: white;
+    height: 20px;
+    width: 2px;
+}
